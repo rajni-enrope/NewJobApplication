@@ -92,7 +92,7 @@ const Signup = () => {
     return (
         <div  className="min-h-screen flex items-center justify-center bg-gray-100  px-3 max-[360px]:px-3 sm:px-4 md:px-8 lg:px-16" >
             <div  className="bg-white p-1 rounded shadow-md w-full max-w-md my-8">
-                <div className="flex flex-col items-center pt-3 min-h-screen gap-6">
+                <div className="flex flex-col items-center pt-3  gap-6">
 
                     <h1 className="p-4 pb-[5px]   text-xl font-bold text-center">SignUp For NewUser</h1>
 
@@ -118,12 +118,7 @@ const Signup = () => {
                             <input type="date" id="DateOfBirth" name="DateOfBirth" value={formValues.DateOfBirth} onChange={handleChange} className="border border-gray-400 p-2 rounded w-full" />
                             {formErrors.DateOfBirth && <p className="text-red-500">{formErrors.DateOfBirth}</p>}
                         </div>
-                        <div>
-                            <label htmlFor="About" className="text-sm font-medium text-gray-700"> About </label>
-                            <textarea id="About" name="About" rows="4" cols="50" placeholder="Type your message here..." value={formValues.About} onChange={handleChange} className="border border-gray-400 p-2 rounded w-full" />
-                            {formErrors.About && <p className="text-red-500">{formErrors.About}</p>}
-                        </div>
-                        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-gray-800 mt-4 mx-4">SignUp</button>
+                        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-gray-800 mt-4 mx-4 mb-4">SignUp</button>
                     </form>
                 </div>
             </div>
